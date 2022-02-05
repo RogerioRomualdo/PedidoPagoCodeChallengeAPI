@@ -1,0 +1,17 @@
+{
+  "name": "PedidoPagoCodeChallengeApi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RogerioRomualdo/PedidoPagoCodeChallengeApi.git",
+  "author": "Rogerio <rogerioromualdo12@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.4",
+    "@grpc/proto-loader": "^0.6.9",
+    "@types/express": "^4.17.13",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
