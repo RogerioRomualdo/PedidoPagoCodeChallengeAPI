@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    environment:
+      - MS_HOST = $MS_HOST
+      - APP_HOST = $APP_HOST
+      - APP_PORT = $APP_PORT
+      - MSPHARMACY_PORT = $MSPHARMACY_PORT
+      - MSPRODUCT_PORT = $MSPRODUCT_PORT
+    ports:
+      - 8090:8090
+    volumes:
+      - .:/usr/app

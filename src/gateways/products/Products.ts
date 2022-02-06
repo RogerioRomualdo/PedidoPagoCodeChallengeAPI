@@ -2,13 +2,16 @@ import GetCLient from "../../pb/loader";
 import { IProductsClient } from "./IProducts";
 import { ProductDTO, paginationOptions, Product } from "../../types";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 export class ProductsClient implements IProductsClient {
   private productsClient;
 
   constructor() {
     this.productsClient = GetCLient({
       serviceName: "ProductService",
-      address: "localhost:8088",
+      address: `${process.env.MS_HOST}:${process.env.MSPRODUCT_PORT}`,
       fileName: "product",
     });
   }
